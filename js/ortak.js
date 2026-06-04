@@ -10,9 +10,7 @@
 
   var lang = 'tr';
   var theme = localStorage.getItem('mimoza-theme') || 'light';
-
-  /* ---------- Translations ---------- */
-  var langs = {};
+var langs = {};
 
   langs.tr = {
     skipLink: 'Ana içeriğe geç',
@@ -301,9 +299,7 @@
     footerPrivacy: 'Privacy Policy',
     footerTerms: 'Terms of Service'
   };
-
-  /* ---------- Language + Theme helpers ---------- */
-  function applyLang(l) {
+function applyLang(l) {
     lang = l;
     var label = q('#langLabel');
     if (label) label.textContent = l.toUpperCase();
@@ -328,9 +324,7 @@
     if (icon) icon.className = t === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
     localStorage.setItem('mimoza-theme', t);
   }
-
-  /* ---------- Hamburger menu ---------- */
-  var hamburgerBtn = q('#hamburgerBtn');
+var hamburgerBtn = q('#hamburgerBtn');
   if (hamburgerBtn) {
     hamburgerBtn.addEventListener('click', function () {
       var nav = q('#mainNav');
@@ -364,25 +358,19 @@
       if (icon) icon.className = 'fas fa-bars';
     }
   });
-
-  /* ---------- Theme toggle ---------- */
-  var themeBtn = q('#themeToggle');
+var themeBtn = q('#themeToggle');
   if (themeBtn) {
     themeBtn.addEventListener('click', function () {
       applyTheme(theme === 'dark' ? 'light' : 'dark');
     });
   }
-
-  /* ---------- Language toggle ---------- */
-  var langBtn = q('#langToggle');
+var langBtn = q('#langToggle');
   if (langBtn) {
     langBtn.addEventListener('click', function () {
       applyLang(lang === 'tr' ? 'en' : 'tr');
     });
   }
-
-  /* ---------- Scroll reveal ---------- */
-  if ('IntersectionObserver' in window) {
+if ('IntersectionObserver' in window) {
     var ro = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
@@ -395,9 +383,7 @@
   } else {
     qa('.sr-reveal').forEach(function (el) { el.classList.add('visible'); });
   }
-
-  /* ---------- Scroll to top ---------- */
-  var toTop = q('#toTopBtn');
+var toTop = q('#toTopBtn');
   if (toTop) {
     window.addEventListener('scroll', function () {
       toTop.classList.toggle('visible', window.scrollY > 500);
@@ -406,9 +392,7 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
-
-  /* ---------- Restore preferences ---------- */
-  var savedLang = localStorage.getItem('mimoza-lang') || 'tr';
+var savedLang = localStorage.getItem('mimoza-lang') || 'tr';
   var savedTheme = localStorage.getItem('mimoza-theme') || 'light';
   applyLang(savedLang);
   applyTheme(savedTheme);

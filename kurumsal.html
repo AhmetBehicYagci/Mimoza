@@ -26,8 +26,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="css/ortak.css">
-  <link rel="stylesheet" href="css/kurumsal.css">
+  <link rel="preload" as="style" href="css/ortak.css">
+  <link rel="stylesheet" href="css/ortak.css" media="print" onload="this.media='all'">
+  <link rel="preload" as="style" href="css/kurumsal.css">
+  <link rel="stylesheet" href="css/kurumsal.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/ortak.css"></noscript>
+  <noscript><link rel="stylesheet" href="css/kurumsal.css"></noscript>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E82VGXR2VX"></script>
   <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-E82VGXR2VX');</script>
 </head>

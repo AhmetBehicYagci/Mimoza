@@ -2,7 +2,7 @@
    Mimoza Kafe — Anasayfa Styles
    ============================================ */
 
-/* Hero */
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -141,7 +141,7 @@
   color: var(--text)
 }
 
-/* About */
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -196,7 +196,7 @@
   color: var(--text)
 }
 
-/* CTA Banner */
+
 .cta-banner {
   background: linear-gradient(135deg, var(--primary), #8b4513);
   border-radius: var(--radius);
@@ -247,7 +247,7 @@
   transform: translateY(-2px)
 }
 
-/* Responsive */
+
 @media(max-width:1024px) {
   .hero .container {
     grid-template-columns: 1fr;

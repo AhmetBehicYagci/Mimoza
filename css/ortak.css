@@ -2,7 +2,7 @@
    Mimoza Kafe — Ortak (Shared) Styles
    ============================================ */
 
-/* ---------- Reset ---------- */
+
 *,
 *::before,
 *::after {
@@ -11,7 +11,7 @@
   box-sizing: border-box
 }
 
-/* ---------- Variables ---------- */
+
 :root {
   --primary: #a0522d;
   --primary-hover: #8b4513;
@@ -55,7 +55,7 @@
   --footer-text-muted: #666
 }
 
-/* ---------- Base ---------- */
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--nav-height)
@@ -125,7 +125,7 @@ ul {
   top: 0
 }
 
-/* ---------- Typography ---------- */
+
 .section-label {
   font-size: 13px;
   font-weight: 600;
@@ -158,7 +158,7 @@ ul {
   margin: 0 auto
 }
 
-/* ---------- Scroll Reveal ---------- */
+
 .sr-reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -170,7 +170,7 @@ ul {
   transform: translateY(0)
 }
 
-/* ---------- Buttons ---------- */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -209,7 +209,7 @@ ul {
   transform: translateY(-2px)
 }
 
-/* ---------- Section ---------- */
+
 .section {
   padding: 100px 0
 }
@@ -218,7 +218,7 @@ ul {
   background: var(--primary-bg)
 }
 
-/* ---------- Header ---------- */
+
 .header {
   position: fixed;
   top: 0;
@@ -281,7 +281,7 @@ ul {
   color: var(--primary)
 }
 
-/* ---------- Navigation ---------- */
+
 .nav {
   display: flex;
   align-items: center;
@@ -307,7 +307,7 @@ ul {
   display: none
 }
 
-/* ---------- Page Hero ---------- */
+
 .page-hero {
   padding: 140px 0 80px;
   text-align: center;
@@ -328,7 +328,7 @@ ul {
   margin: 0 auto
 }
 
-/* ---------- Footer ---------- */
+
 .footer {
   background: var(--footer-bg);
   color: var(--footer-text);
@@ -406,7 +406,7 @@ ul {
   color: var(--primary-light)
 }
 
-/* ---------- Scroll to Top ---------- */
+
 .to-top {
   position: fixed;
   bottom: 32px;
