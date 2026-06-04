@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim — Mimoza Kafe / Bize Ulaşın</title>
+  <meta name="description"
+    content="Mimoza Kafe ile iletişime geçin. Adres: Uludağ Üniversitesi Eğitim Fakültesi Binalar Aralığı, Nilüfer/Bursa. Telefon ve e-posta ile bize ulaşabilirsiniz.">
+  <meta name="author" content="Mimoza Kafe">
+  <meta name="theme-color" content="#a0522d">
+  <link rel="canonical" href="https://mimozakafe.com/iletisim">
+  <link rel="icon" href="images/logo.webp" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/logo.webp">
+  <meta property="og:title" content="İletişim - Mimoza Kafe">
+  <meta property="og:description" content="Bize ulaşın: Uludağ Üniversitesi kampüsünde sizi bekliyoruz.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mimozakafe.com/iletisim">
+  <meta property="og:image" content="https://mimozakafe.com/images/logo.webp">
+  <meta property="og:locale" content="tr_TR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="İletişim - Mimoza Kafe">
+  <meta name="twitter:description" content="Bize ulaşın, sizi kafemizde görmekten mutluluk duyarız.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print"
+    onload="this.media='all'">
+  <link rel="stylesheet" href="css/ortak.css">
+  <link rel="stylesheet" href="css/iletisim.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX');</script>
+</head>
+
+<body>
+  <a href="#main" class="skip-link" data-i18n="skipLink">Ana içeriğe geç</a>
+  <header class="header" role="banner">
+    <div class="container">
+      <a href="anasayfa.html" class="header-logo" aria-label="Mimoza Kafe Ana Sayfa">
+        <img src="images/logo.webp" alt="Mimoza Kafe Logo" class="header-logo-img" width="42" height="42"
+          loading="eager">
+        <span>Mimoza Kafe</span>
+      </a>
+      <nav class="nav" id="mainNav" role="navigation" aria-label="Ana navigasyon">
+        <a href="anasayfa.html" data-i18n="navHome">Anasayfa</a>
+        <a href="kurumsal.html" data-i18n="navAbout">Kurumsal</a>
+        <a href="menu.html" data-i18n="navMenu">Menü</a>
+        <a href="galeri.html" data-i18n="navGallery">Galeri</a>
+        <a href="iletisim.html" class="active" data-i18n="navContact">İletişim</a>
+      </nav>
+      <div class="header-controls">
+        <button class="header-btn" id="langToggle" aria-label="Dil değiştir / Switch language" title="EN">
+          <span id="langLabel">TR</span>
+        </button>
+        <button class="header-btn" id="themeToggle" aria-label="Karanlık modu değiştir">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="header-btn hamburger" id="hamburgerBtn" aria-label="Menüyü aç/kapat" aria-expanded="false"
+          aria-controls="mainNav">
+          <i class="fas fa-bars" id="hamburgerIcon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main" role="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1 data-i18n="contactPageTitle">İletişim</h1>
+        <p data-i18n="contactPageDesc">Sorularınız, önerileriniz veya siparişleriniz için bize ulaşmaktan çekinmeyin.
+        </p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="contact-main-title">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form sr-reveal" id="contactFormWrapper">
+            <form id="contactForm" action="https://formspree.io/f/mrevbkvl" method="POST" novalidate>
+              <div class="form-success" id="formSuccess">
+                <i class="fas fa-check-circle"></i>
+                <h3 data-i18n="formSuccessTitle">Mesajınız Alındı!</h3>
+                <p data-i18n="formSuccessText">En kısa sürede size dönüş yapacağız. Teşekkür ederiz.</p>
+              </div>
+              <div id="formFields">
+                <div class="form-group">
+                  <label class="form-label" for="contactName">Adınız Soyadınız <span class="required">*</span></label>
+                  <input class="form-control" id="contactName" name="name" type="text" required
+                    data-i18n-placeholder="formNamePlace" placeholder="Adınız Soyadınız">
+                  <div class="form-error" data-i18n="formNameError">Lütfen adınızı girin.</div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contactEmail">E-posta Adresiniz <span class="required">*</span></label>
+                  <input class="form-control" id="contactEmail" name="email" type="email" required
+                    data-i18n-placeholder="formEmailPlace" placeholder="ornek@email.com">
+                  <div class="form-error" data-i18n="formEmailError">Lütfen geçerli bir e-posta girin.</div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contactSubject" data-i18n="formSubject">Konu</label>
+                  <input class="form-control" id="contactSubject" name="subject" type="text"
+                    data-i18n-placeholder="formSubjectPlace" placeholder="Konu başlığı">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contactMessage">Mesajınız <span class="required">*</span></label>
+                  <textarea class="form-control" id="contactMessage" name="message" required
+                    data-i18n-placeholder="formMessagePlace" placeholder="Mesajınızı yazın..."></textarea>
+                  <div class="form-error" data-i18n="formMessageError">Lütfen mesajınızı girin.</div>
+                </div>
+                <button type="submit" class="btn btn-primary form-submit">
+                  <i class="fas fa-paper-plane"></i> <span data-i18n="formSubmit">Mesaj Gönder</span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="contact-info sr-reveal">
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h2 class="contact-card-title" data-i18n="contactAddressTitle">Adres</h2>
+                <p class="contact-card-text">Uludağ Üniversitesi Eğitim Fakültesi Binalar Aralığı, Nilüfer / Bursa</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <h2 class="contact-card-title" data-i18n="contactPhoneTitle">Telefon</h2>
+                <p class="contact-card-text"><a href="tel:+905352793885">+90 535 279 38 85</a></p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h2 class="contact-card-title" data-i18n="contactEmailTitle">E-posta</h2>
+                <p class="contact-card-text"><a href="mailto:mimozagorukle@gmail.com">mimozagorukle@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <h2 class="contact-card-title" data-i18n="contactHoursTitle">Çalışma Saatleri</h2>
+                <p class="contact-card-text" data-i18n="contactHours">Hafta İçi Her Gün 07.30 - 19.00</p>
+              </div>
+            </div>
+            <div class="contact-social">
+              <p class="contact-social-title" data-i18n="socialTitle">Sosyal Medyada Biz</p>
+              <div class="contact-social-links">
+                <a href="https://www.instagram.com/mimozaacafee/?__pwa=1" target="_blank" rel="noopener noreferrer"
+                  aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map-wrap sr-reveal">
+          <iframe
+            src="https://maps.google.com/maps?q=Uludağ%20Üniversitesi%20Eğitim%20Fakültesi,%20Görükle,%20Nilüfer/Bursa&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+            title="Mimoza Kafe Konumu"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="anasayfa.html" class="header-logo" aria-label="Mimoza Kafe">
+            <img src="images/logo.webp" alt="Mimoza Kafe Logo" class="header-logo-img" width="42" height="42"
+              loading="lazy">
+            <span>Mimoza Kafe</span>
+          </a>
+          <p data-i18n="footerDesc">Kampüsün gri günlerine sarı bir mola. </p>
+        </div>
+        <div>
+          <h4 data-i18n="footerQuick">Hızlı Linkler</h4>
+          <ul>
+            <li><a href="anasayfa.html" data-i18n="navHome">Anasayfa</a></li>
+            <li><a href="kurumsal.html" data-i18n="navAbout">Kurumsal</a></li>
+            <li><a href="menu.html" data-i18n="navMenu">Menü</a></li>
+            <li><a href="galeri.html" data-i18n="navGallery">Galeri</a></li>
+            <li><a href="iletisim.html" data-i18n="navContact">İletişim</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footerContact">İletişim</h4>
+          <ul>
+            <li><a href="tel:+905352793885">+90 535 279 38 85</a></li>
+            <li><a href="mailto:mimozagorukle@gmail.com">mimozagorukle@gmail.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footerHours">Çalışma Saatleri</h4>
+          <ul>
+            <li class="footer-text" data-i18n="footerWeekdays">Hafta İçi: 07.30 - 19.00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Mimoza Kafe. <span data-i18n="footerRights">Tüm hakları saklıdır.</span></p>
+        <div class="footer-bottom-links">
+          <a href="#" data-i18n="footerPrivacy">Gizlilik Politikası</a>
+          <a href="#" data-i18n="footerTerms">Kullanım Koşulları</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" id="toTopBtn" aria-label="Yukarı çık"><i class="fas fa-arrow-up"></i></button>
+  <script src="js/ortak.js" defer></script>
+  <script src="js/iletisim.js" defer></script>
+</body>
+
+</html>

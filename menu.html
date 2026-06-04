@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menümüz — Mimoza Kafe / Kampüsün Sarı Molası</title>
+  <meta name="description"
+    content="Mimoza Kafe'nin özenle hazırlanan sıcak/soğuk kahveleri, lezzetli tatlıları ve kampüs içi yiyecek menüsünü inceleyin.">
+  <meta name="author" content="Mimoza Kafe">
+  <meta name="theme-color" content="#a0522d">
+  <link rel="canonical" href="https://mimozakafe.com/menu">
+  <link rel="icon" href="images/logo.webp" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/logo.webp">
+  <meta property="og:title" content="Menümüz - Mimoza Kafe">
+  <meta property="og:description" content="Sıcak/soğuk kahveler, lezzetli tatlılar, doyurucu yemekler ve daha fazlası.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mimozakafe.com/menu">
+  <meta property="og:image" content="https://mimozakafe.com/images/logo.webp">
+  <meta property="og:locale" content="tr_TR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Menümüz - Mimoza Kafe">
+  <meta name="twitter:description" content="Her damak tadına uygun lezzetler.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print"
+    onload="this.media='all'">
+  <link rel="stylesheet" href="css/ortak.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX');</script>
+</head>
+
+<body>
+  <a href="#main" class="skip-link" data-i18n="skipLink">Ana içeriğe geç</a>
+  <header class="header" role="banner">
+    <div class="container">
+      <a href="anasayfa.html" class="header-logo" aria-label="Mimoza Kafe Ana Sayfa">
+        <img src="images/logo.webp" alt="Mimoza Kafe Logo" class="header-logo-img" width="42" height="42"
+          loading="eager">
+        <span>Mimoza Kafe</span>
+      </a>
+      <nav class="nav" id="mainNav" role="navigation" aria-label="Ana navigasyon">
+        <a href="anasayfa.html" data-i18n="navHome">Anasayfa</a>
+        <a href="kurumsal.html" data-i18n="navAbout">Kurumsal</a>
+        <a href="menu.html" class="active" data-i18n="navMenu">Menü</a>
+        <a href="galeri.html" data-i18n="navGallery">Galeri</a>
+        <a href="iletisim.html" data-i18n="navContact">İletişim</a>
+      </nav>
+      <div class="header-controls">
+        <button class="header-btn" id="langToggle" aria-label="Dil değiştir / Switch language" title="EN">
+          <span id="langLabel">TR</span>
+        </button>
+        <button class="header-btn" id="themeToggle" aria-label="Karanlık modu değiştir">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="header-btn hamburger" id="hamburgerBtn" aria-label="Menüyü aç/kapat" aria-expanded="false"
+          aria-controls="mainNav">
+          <i class="fas fa-bars" id="hamburgerIcon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main" role="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1 data-i18n="menuPageTitle">Menümüz</h1>
+        <p data-i18n="menuPageDesc">Her damak tadına uygun lezzetler. Kampüsün en sevilen menüsü.</p>
+      </div>
+    </section>
+    <section class="section" id="menuSection" aria-labelledby="menu-main-title">
+      <div class="container">
+        <div class="menu-layout">
+          <aside class="menu-sidebar" role="tablist" aria-label="Menu categories">
+            <button class="menu-nav-btn active" role="tab" aria-selected="true" aria-controls="panel-hot-coffee" data-category="hot-coffee">
+              <i class="fas fa-mug-hot"></i>
+              <span data-i18n="catHotCoffee">Sıcak Kahveler</span>
+            </button>
+            <button class="menu-nav-btn" role="tab" aria-selected="false" aria-controls="panel-cold-coffee" data-category="cold-coffee">
+              <i class="fas fa-snowflake"></i>
+              <span data-i18n="catColdCoffee">Soğuk Kahveler</span>
+            </button>
+            <button class="menu-nav-btn" role="tab" aria-selected="false" aria-controls="panel-hot-drinks" data-category="hot-drinks">
+              <i class="fas fa-fire"></i>
+              <span data-i18n="catHotDrinks">Sıcak İçecekler</span>
+            </button>
+            <button class="menu-nav-btn" role="tab" aria-selected="false" aria-controls="panel-cold-drinks" data-category="cold-drinks">
+              <i class="fas fa-glass-water"></i>
+              <span data-i18n="catColdDrinks">Soğuk İçecekler</span>
+            </button>
+            <button class="menu-nav-btn" role="tab" aria-selected="false" aria-controls="panel-desserts" data-category="desserts">
+              <i class="fas fa-cake"></i>
+              <span data-i18n="catDesserts">Tatlılar</span>
+            </button>
+            <button class="menu-nav-btn" role="tab" aria-selected="false" aria-controls="panel-pastry" data-category="pastry">
+              <i class="fas fa-bread-slice"></i>
+              <span data-i18n="catPastry">Unlu Mamuller</span>
+            </button>
+            <button class="menu-nav-btn" role="tab" aria-selected="false" aria-controls="panel-meals" data-category="meals">
+              <i class="fas fa-utensils"></i>
+              <span data-i18n="catMeals">Yemek Çeşitleri</span>
+            </button>
+            <button class="menu-nav-btn" role="tab" aria-selected="false" aria-controls="panel-sandwiches" data-category="sandwiches">
+              <i class="fas fa-hotdog"></i>
+              <span data-i18n="catSandwiches">Ekmek Arası Çeşitleri</span>
+            </button>
+          </aside>
+          <div class="menu-content">
+            <div class="menu-panel active" id="panel-hot-coffee" role="tabpanel" data-category="hot-coffee">
+              <h2 class="menu-panel-title" data-i18n="catHotCoffee">Sıcak Kahveler</h2>
+              <div class="menu-panel-items">
+                <div class="menu-item"><span data-i18n="miEspresso">Espresso</span><span class="menu-item-price">85 TL</span></div>
+                <div class="menu-item"><span data-i18n="miMachiatto">Espresso Machiato</span><span class="menu-item-price">110 TL</span></div>
+                <div class="menu-item"><span data-i18n="miAmericano">Americano</span><span class="menu-item-price">110 TL</span></div>
+                <div class="menu-item"><span data-i18n="miFilter">Filtre Kahve</span><span class="menu-item-price">110 TL</span></div>
+                <div class="menu-item"><span data-i18n="miLatte">Latte</span><span class="menu-item-price">130 TL</span></div>
+                <div class="menu-item"><span data-i18n="miSyrupLatte">Şuruplu Latteler</span><span class="menu-item-price">150 TL</span></div>
+                <div class="menu-item"><span data-i18n="miCappuccino">Cappuccino</span><span class="menu-item-price">130 TL</span></div>
+                <div class="menu-item"><span data-i18n="miTurkish">Türk Kahvesi</span><span class="menu-item-price">80 TL</span></div>
+                <div class="menu-item"><span data-i18n="miFlatWhite">Flat White</span><span class="menu-item-price">120 TL</span></div>
+                <div class="menu-item"><span data-i18n="miCortado">Cortado</span><span class="menu-item-price">120 TL</span></div>
+              </div>
+            </div>
+            <div class="menu-panel" id="panel-cold-coffee" role="tabpanel" data-category="cold-coffee">
+              <h2 class="menu-panel-title" data-i18n="catColdCoffee">Soğuk Kahveler</h2>
+              <div class="menu-panel-items">
+                <div class="menu-item"><span data-i18n="miIcedAmericano">Iced Americano</span><span class="menu-item-price">120 TL</span></div>
+                <div class="menu-item"><span data-i18n="miIcedLatte">Iced Latte</span><span class="menu-item-price">140 TL</span></div>
+                <div class="menu-item"><span data-i18n="miIcedMocha">Iced Mocha</span><span class="menu-item-price">150 TL</span></div>
+                <div class="menu-item"><span data-i18n="miColdBrew">Cold Brew</span><span class="menu-item-price">130 TL</span></div>
+                <div class="menu-item"><span data-i18n="miFrappe">Frappe</span><span class="menu-item-price">160 TL</span></div>
+              </div>
+            </div>
+            <div class="menu-panel" id="panel-hot-drinks" role="tabpanel" data-category="hot-drinks">
+              <h2 class="menu-panel-title" data-i18n="catHotDrinks">Sıcak İçecekler</h2>
+              <div class="menu-panel-items">
+                <div class="menu-item"><span data-i18n="miTea">Çay</span><span class="menu-item-price">25 TL</span></div>
+                <div class="menu-item"><span data-i18n="miPackedTea">Paket Çaylar</span><span class="menu-item-price">30 TL</span></div>
+                <div class="menu-item"><span data-i18n="miNescafe">Nescafe</span><span class="menu-item-price">35 TL</span></div>
+                <div class="menu-item"><span data-i18n="miHotChoc">Sıcak Çikolata</span><span class="menu-item-price">100 TL</span></div>
+                <div class="menu-item"><span data-i18n="miSahlep">Sahlep</span><span class="menu-item-price">100 TL</span></div>
+              </div>
+            </div>
+            <div class="menu-panel" id="panel-cold-drinks" role="tabpanel" data-category="cold-drinks">
+              <h2 class="menu-panel-title" data-i18n="catColdDrinks">Soğuk İçecekler</h2>
+              <div class="menu-panel-items">
+                <div class="menu-item"><span data-i18n="miPlainSoda">Sade Soda</span><span class="menu-item-price">25 TL</span></div>
+                <div class="menu-item"><span data-i18n="miFruitSoda">Meyveli Soda</span><span class="menu-item-price">30 TL</span></div>
+                <div class="menu-item"><span data-i18n="miCannedDrinks">Kutu İçecekler</span><span class="menu-item-price">70 TL</span></div>
+                <div class="menu-item"><span data-i18n="miGazoz">Gazoz</span><span class="menu-item-price">50 TL</span></div>
+                <div class="menu-item"><span data-i18n="miLemonade">Limonata</span><span class="menu-item-price">50 TL</span></div>
+                <div class="menu-item"><span data-i18n="miAyran">Ayran</span><span class="menu-item-price">25 TL</span></div>
+                <div class="menu-item"><span data-i18n="miWater">Su</span><span class="menu-item-price">15 TL</span></div>
+              </div>
+            </div>
+            <div class="menu-panel" id="panel-desserts" role="tabpanel" data-category="desserts">
+              <h2 class="menu-panel-title" data-i18n="catDesserts">Tatlılar</h2>
+              <div class="menu-panel-items">
+                <div class="menu-item"><span data-i18n="miTrilece">Trileçe</span><span class="menu-item-price">80 TL</span></div>
+                <div class="menu-item"><span data-i18n="miEclair">Ekler</span><span class="menu-item-price">50 TL</span></div>
+                <div class="menu-item"><span data-i18n="miCheesecake">Orman Meyveli Cheesecake</span><span class="menu-item-price">180 TL</span></div>
+                <div class="menu-item"><span data-i18n="miBrownie">Çikolatalı Browni</span><span class="menu-item-price">150 TL</span></div>
+                <div class="menu-item"><span data-i18n="miWhiteBrownie">Beyaz Çikolatalı Browni</span><span class="menu-item-price">210 TL</span></div>
+                <div class="menu-item"><span data-i18n="miPistachioCake">Fıstıklı Çikolatalı Pasta</span><span class="menu-item-price">180 TL</span></div>
+                <div class="menu-item"><span data-i18n="miRaspRoll">Frambuazlı Rulo Pasta</span><span class="menu-item-price">180 TL</span></div>
+                <div class="menu-item"><span data-i18n="miBlackForest">Karaorman Pasta</span><span class="menu-item-price">160 TL</span></div>
+                <div class="menu-item"><span data-i18n="miMosaic">Mozaik Pasta</span><span class="menu-item-price">160 TL</span></div>
+                <div class="menu-item"><span data-i18n="miCroquant">Krokanlı Pasta</span><span class="menu-item-price">160 TL</span></div>
+              </div>
+            </div>
+            <div class="menu-panel" id="panel-pastry" role="tabpanel" data-category="pastry">
+              <h2 class="menu-panel-title" data-i18n="catPastry">Unlu Mamuller</h2>
+              <div class="menu-panel-items">
+                <div class="menu-item"><span data-i18n="miPogaca">Poğaça</span><span class="menu-item-price">35 TL</span></div>
+                <div class="menu-item"><span data-i18n="miBorek">Börek</span><span class="menu-item-price">25 TL</span></div>
+              </div>
+            </div>
+            <div class="menu-panel" id="panel-meals" role="tabpanel" data-category="meals">
+              <h2 class="menu-panel-title" data-i18n="catMeals">Yemek Çeşitleri</h2>
+              <div class="menu-panel-items">
+                <div class="menu-item"><span data-i18n="miSoup">Çorba Çeşitleri</span><span class="menu-item-price">100 TL</span></div>
+                <div class="menu-item"><span data-i18n="miChickenRice">Tavuklu Pilav + Ayran</span><span class="menu-item-price">120 TL</span></div>
+                <div class="menu-item"><span data-i18n="miPasta">Soslu Makarna</span><span class="menu-item-price">90 TL</span></div>
+                <div class="menu-item"><span data-i18n="miDoner">Tavuk Döner Porsiyon</span><span class="menu-item-price">200 TL</span></div>
+                <div class="menu-item"><span data-i18n="miFries">Patates Porsiyon</span><span class="menu-item-price">100 TL</span></div>
+                <div class="menu-item"><span data-i18n="miConeFries">Patates Külah</span><span class="menu-item-price">60 TL</span></div>
+                <div class="menu-item"><span data-i18n="miSalad">Salata Çeşitleri</span><span class="menu-item-price">80 TL</span></div>
+              </div>
+            </div>
+            <div class="menu-panel" id="panel-sandwiches" role="tabpanel" data-category="sandwiches">
+              <h2 class="menu-panel-title" data-i18n="catSandwiches">Ekmek Arası Çeşitleri</h2>
+              <div class="menu-panel-items">
+                <div class="menu-item"><span data-i18n="miDonerBread">Ekmek Arası Döner + Ayran</span><span class="menu-item-price">140 TL</span></div>
+                <div class="menu-item"><span data-i18n="miKofteBread">Ekmek Arası Köfte + Ayran</span><span class="menu-item-price">140 TL</span></div>
+                <div class="menu-item"><span data-i18n="miNuggetBread">Ekmek Arası Nugget + Ayran</span><span class="menu-item-price">140 TL</span></div>
+                <div class="menu-item"><span data-i18n="miPatso">Patso + Ayran</span><span class="menu-item-price">120 TL</span></div>
+                <div class="menu-item"><span data-i18n="miKumru">Kumru + Ayran</span><span class="menu-item-price">140 TL</span></div>
+                <div class="menu-item"><span data-i18n="miSandwich">Sandviç + Ayran</span><span class="menu-item-price">100 TL</span></div>
+                <div class="menu-item"><span data-i18n="miToast">Tost + Ayran</span><span class="menu-item-price">120 TL</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="anasayfa.html" class="header-logo" aria-label="Mimoza Kafe">
+            <img src="images/logo.webp" alt="Mimoza Kafe Logo" class="header-logo-img" width="42" height="42"
+              loading="lazy">
+            <span>Mimoza Kafe</span>
+          </a>
+          <p data-i18n="footerDesc">Kampüsün gri günlerine sarı bir mola.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footerQuick">Hızlı Linkler</h4>
+          <ul>
+            <li><a href="anasayfa.html" data-i18n="navHome">Anasayfa</a></li>
+            <li><a href="kurumsal.html" data-i18n="navAbout">Kurumsal</a></li>
+            <li><a href="menu.html" data-i18n="navMenu">Menü</a></li>
+            <li><a href="galeri.html" data-i18n="navGallery">Galeri</a></li>
+            <li><a href="iletisim.html" data-i18n="navContact">İletişim</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footerContact">İletişim</h4>
+          <ul>
+            <li><a href="tel:+905352793885">+90 535 279 38 85</a></li>
+            <li><a href="mailto:mimozagorukle@gmail.com">mimozagorukle@gmail.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footerHours">Çalışma Saatleri</h4>
+          <ul>
+            <li class="footer-text" data-i18n="footerWeekdays">Hafta İçi: 07.30 - 19.00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Mimoza Kafe. <span data-i18n="footerRights">Tüm hakları saklıdır.</span></p>
+        <div class="footer-bottom-links">
+          <a href="#" data-i18n="footerPrivacy">Gizlilik Politikası</a>
+          <a href="#" data-i18n="footerTerms">Kullanım Koşulları</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button class="to-top" id="toTopBtn" aria-label="Yukarı çık"><i class="fas fa-arrow-up"></i></button>
+  <script src="js/ortak.js" defer></script>
+  <script src="js/menu.js" defer></script>
+</body>
+
+</html>
