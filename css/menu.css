@@ -80,22 +80,6 @@
   }
 }
 
-.menu-scroll-hint {
-  display: none;
-  text-align: center;
-  font-size: 12px;
-  color: var(--text-muted);
-  gap: 6px;
-  align-items: center;
-  justify-content: center;
-  animation: menuFadeIn .4s ease both
-}
-
-.menu-scroll-hint i {
-  font-size: 10px;
-  opacity: .6
-}
-
 .menu-panel-title {
   font-family: var(--font-serif);
   font-size: 28px;
@@ -147,35 +131,29 @@
   .menu-sidebar {
     width: 100%;
     flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 4px;
-    padding: 8px;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 12px;
     position: static;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    mask-image: linear-gradient(to right, #000 85%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, #000 85%, transparent 100%)
-  }
-
-  .menu-sidebar::-webkit-scrollbar {
-    display: none
-  }
-
-  .menu-scroll-hint {
-    display: flex
+    background: var(--surface);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05)
   }
 
   .menu-nav-btn {
-    flex-shrink: 0;
+    flex: 1 1 auto;
+    min-width: 0;
     white-space: nowrap;
-    padding: 10px 18px;
-    font-size: 14px
+    padding: 10px 16px;
+    font-size: 13px;
+    gap: 8px;
+    justify-content: center
   }
 
   .menu-nav-btn i {
     width: 16px;
-    font-size: 14px
+    font-size: 13px
   }
 
   .menu-panel-title {
@@ -191,14 +169,20 @@
 
 @media(max-width:768px) {
   .menu-sidebar {
-    padding: 6px;
-    gap: 2px
+    padding: 10px;
+    gap: 4px
   }
 
   .menu-nav-btn {
-    padding: 8px 14px;
-    font-size: 13px;
-    gap: 8px
+    padding: 8px 12px;
+    font-size: 12px;
+    gap: 6px;
+    border-radius: 8px
+  }
+
+  .menu-nav-btn i {
+    width: 14px;
+    font-size: 11px
   }
 
   .menu-panel-title {
@@ -219,21 +203,22 @@
   }
 
   .menu-sidebar {
-    padding: 4px;
-    gap: 2px;
+    padding: 8px;
+    gap: 4px;
     border-radius: 12px
   }
 
   .menu-nav-btn {
     padding: 6px 10px;
-    font-size: 12px;
+    font-size: 11px;
     gap: 4px;
-    border-radius: 8px
+    border-radius: 6px;
+    flex: 0 1 auto
   }
 
   .menu-nav-btn i {
     width: 12px;
-    font-size: 11px
+    font-size: 10px
   }
 
   .menu-panel-title {
