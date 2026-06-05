@@ -80,6 +80,22 @@
   }
 }
 
+.menu-scroll-hint {
+  display: none;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  animation: menuFadeIn .4s ease both
+}
+
+.menu-scroll-hint i {
+  font-size: 10px;
+  opacity: .6
+}
+
 .menu-panel-title {
   font-family: var(--font-serif);
   font-size: 28px;
@@ -124,7 +140,8 @@
 @media(max-width:1024px) {
   .menu-layout {
     flex-direction: column;
-    gap: 24px
+    gap: 24px;
+    min-height: 50vh
   }
 
   .menu-sidebar {
@@ -136,11 +153,17 @@
     padding: 8px;
     position: static;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none
+    scrollbar-width: none;
+    mask-image: linear-gradient(to right, #000 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, #000 85%, transparent 100%)
   }
 
   .menu-sidebar::-webkit-scrollbar {
     display: none
+  }
+
+  .menu-scroll-hint {
+    display: flex
   }
 
   .menu-nav-btn {
@@ -186,6 +209,45 @@
 
   .menu-item {
     padding: 12px 14px;
+    font-size: 14px
+  }
+}
+
+@media(max-width:480px) {
+  .menu-layout {
+    gap: 16px
+  }
+
+  .menu-sidebar {
+    padding: 4px;
+    gap: 2px;
+    border-radius: 12px
+  }
+
+  .menu-nav-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+    gap: 4px;
+    border-radius: 8px
+  }
+
+  .menu-nav-btn i {
+    width: 12px;
+    font-size: 11px
+  }
+
+  .menu-panel-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+    padding-bottom: 10px
+  }
+
+  .menu-item {
+    padding: 10px 12px;
+    font-size: 13px
+  }
+
+  .menu-item-price {
     font-size: 14px
   }
 }
