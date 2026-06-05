@@ -7,6 +7,17 @@
   var panels = qa('.menu-panel');
   var activeCategory = null;
 
+  // Mobilde hiçbir kategori açık başlamasın
+  if (window.innerWidth <= 1024) {
+    navBtns.forEach(function (btn) { btn.classList.remove('active'); btn.setAttribute('aria-selected', 'false'); });
+    panels.forEach(function (panel) { panel.classList.remove('active'); });
+    activeCategory = null;
+  } else {
+    // Masaüstünde ilk açık kategoriyi activeCategory olarak işaretle
+    var firstActive = document.querySelector('.menu-nav-btn.active');
+    if (firstActive) activeCategory = firstActive.getAttribute('data-category');
+  }
+
   function activate(category) {
     var isSame = activeCategory === category;
     var newCat = isSame ? null : category;
