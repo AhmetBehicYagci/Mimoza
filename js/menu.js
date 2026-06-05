@@ -1,22 +1,25 @@
 (function () {
   'use strict';
 
-  function q(s, c) { return (c || document).querySelector(s) }
   function qa(s, c) { return (c || document).querySelectorAll(s) }
 
   var navBtns = qa('.menu-nav-btn');
   var panels = qa('.menu-panel');
+  var activeCategory = null;
 
   function activate(category) {
+    var isSame = activeCategory === category;
+    var newCat = isSame ? null : category;
     navBtns.forEach(function (btn) {
-      var isActive = btn.getAttribute('data-category') === category;
+      var isActive = btn.getAttribute('data-category') === newCat;
       btn.classList.toggle('active', isActive);
       btn.setAttribute('aria-selected', isActive);
     });
     panels.forEach(function (panel) {
-      var isActive = panel.getAttribute('data-category') === category;
+      var isActive = panel.getAttribute('data-category') === newCat;
       panel.classList.toggle('active', isActive);
     });
+    activeCategory = newCat;
   }
 
   navBtns.forEach(function (btn) {
