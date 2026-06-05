@@ -139,14 +139,15 @@
     background: none;
     border: none;
     border-radius: 0;
-    box-shadow: none
+    box-shadow: none;
+    overflow: visible
   }
 
   .menu-nav-btn {
     width: auto;
     flex: 0 1 auto;
     white-space: nowrap;
-    padding: 10px 20px;
+    padding: 8px 18px;
     border-radius: 50px;
     border: 1.5px solid var(--border);
     background: var(--bg);
@@ -192,27 +193,28 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
     padding: 0;
     position: static;
     background: none;
     border: none;
     border-radius: 0;
-    box-shadow: none
+    box-shadow: none;
+    overflow: visible
   }
 
   .menu-nav-btn {
     width: auto;
     flex: 0 1 auto;
-    min-height: 40px;
-    padding: 8px 18px;
+    min-height: 38px;
+    padding: 6px 14px;
     border-radius: 50px;
     border: 1.5px solid var(--border);
     background: var(--bg);
     color: var(--text-secondary);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
-    gap: 8px;
+    gap: 6px;
     justify-content: center;
     white-space: nowrap
   }
@@ -231,8 +233,8 @@
   }
 
   .menu-nav-btn i {
-    width: 16px;
-    font-size: 13px
+    width: 14px;
+    font-size: 12px
   }
 
   .menu-panel-title {
