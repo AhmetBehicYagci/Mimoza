@@ -124,8 +124,7 @@
 @media(max-width:1024px) {
   .menu-layout {
     flex-direction: column;
-    gap: 24px;
-    min-height: 50vh
+    gap: 24px
   }
 
   .menu-sidebar {
@@ -134,11 +133,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
-    padding: 0;
+    padding: 16px;
     position: static;
-    background: none;
-    border: none;
-    border-radius: 0;
+    background: var(--primary-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
     box-shadow: none;
     overflow: visible
   }
@@ -147,21 +146,22 @@
     width: auto;
     flex: 0 1 auto;
     white-space: nowrap;
-    padding: 8px 18px;
+    padding: 10px 20px;
     border-radius: 50px;
     border: 1.5px solid var(--border);
     background: var(--bg);
-    color: var(--text-secondary);
+    color: var(--text);
     font-size: 14px;
     font-weight: 500;
     gap: 8px;
-    justify-content: center
+    justify-content: center;
+    min-height: 42px
   }
 
   .menu-nav-btn:hover {
-    background: var(--primary-bg);
-    border-color: var(--primary-light);
-    color: var(--text)
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff
   }
 
   .menu-nav-btn.active {
@@ -173,7 +173,7 @@
 
   .menu-nav-btn i {
     width: 16px;
-    font-size: 13px
+    font-size: 14px
   }
 
   .menu-panel-title {
@@ -183,68 +183,6 @@
 
   .menu-item {
     padding: 14px 16px;
-    font-size: 14px
-  }
-}
-
-@media(max-width:768px) {
-  .menu-sidebar {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    padding: 0;
-    position: static;
-    background: none;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    overflow: visible
-  }
-
-  .menu-nav-btn {
-    width: auto;
-    flex: 0 1 auto;
-    min-height: 38px;
-    padding: 6px 14px;
-    border-radius: 50px;
-    border: 1.5px solid var(--border);
-    background: var(--bg);
-    color: var(--text-secondary);
-    font-size: 13px;
-    font-weight: 500;
-    gap: 6px;
-    justify-content: center;
-    white-space: nowrap
-  }
-
-  .menu-nav-btn:hover {
-    background: var(--primary-bg);
-    border-color: var(--primary-light);
-    color: var(--text)
-  }
-
-  .menu-nav-btn.active {
-    background: var(--primary);
-    border-color: var(--primary);
-    color: #fff;
-    font-weight: 600
-  }
-
-  .menu-nav-btn i {
-    width: 14px;
-    font-size: 12px
-  }
-
-  .menu-panel-title {
-    font-size: 22px;
-    margin-bottom: 16px;
-    padding-bottom: 12px
-  }
-
-  .menu-item {
-    padding: 12px 14px;
     font-size: 14px
   }
 }
